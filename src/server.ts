@@ -10,6 +10,11 @@ connectDB();
 
 app.use(express.json());
 
+// Rota principal - Hello World
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 // Rotas da API
 app.use('/usuarios', usuarioRoutes);
 app.use('/pessoas', peopleRoutes);
