@@ -14,6 +14,14 @@ app.get('/', (req, res) => {
   res.send('NEXUS API!!');
 });
 
+console.log(`
+  =========================================================
+  ✅ Dica de Uso:
+     - Para visualizar usuários, acesse: /usuarios
+     - Para ver uma API de exemplo, use: /usuarios/fornecedor={nome do fornecedor}
+  =========================================================
+  `);
+
 // Rotas da API
 app.use('/usuarios', usuarioRoutes);
 
